@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardElevation="3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvLblDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/tvLblDailyConfirmed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvLblDailyConfirmed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/daily_confirmed"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLblDate" />
+
+        <TextView
+            android:id="@+id/tvLblDailyDeceased"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/daily_deceased"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/tvLblDailyConfirmed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLblDailyConfirmed" />
+
+        <TextView
+            android:id="@+id/tvLblDailyRecovered"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/daily_recovered"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/tvLblDailyConfirmed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLblDailyDeceased" />
+
+        <TextView
+            android:id="@+id/tvLblTotalConfirmed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/total_confirmed"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/tvLblDailyConfirmed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLblDailyRecovered" />
+
+        <TextView
+            android:id="@+id/tvLblTotalDeceased"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/total_deceased"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/tvLblDailyConfirmed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLblTotalConfirmed" />
+
+        <TextView
+            android:id="@+id/tvLblTotalRecovered"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/total_recovered"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/tvLblDailyConfirmed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLblTotalDeceased" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvLblDate"
+            app:layout_constraintTop_toTopOf="@+id/tvLblDate" />
+
+        <TextView
+            android:id="@+id/tvDailyConfirmed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvLblDailyConfirmed"
+            app:layout_constraintTop_toTopOf="@+id/tvLblDailyConfirmed" />
+
+        <TextView
+            android:id="@+id/tvDailyDeceased"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvLblDailyDeceased"
+            app:layout_constraintTop_toTopOf="@+id/tvLblDailyDeceased" />
+
+        <TextView
+            android:id="@+id/tvDailyRecovered"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvLblDailyRecovered"
+            app:layout_constraintTop_toTopOf="@+id/tvLblDailyRecovered" />
+
+        <TextView
+            android:id="@+id/tvTotalConfirmed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvLblTotalConfirmed"
+            app:layout_constraintTop_toTopOf="@+id/tvLblTotalConfirmed" />
+
+        <TextView
+            android:id="@+id/tvTotalDeceased"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvLblTotalDeceased"
+            app:layout_constraintTop_toTopOf="@+id/tvLblTotalDeceased" />
+
+        <TextView
+            android:id="@+id/tvTotalRecovered"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvLblTotalRecovered"
+            app:layout_constraintTop_toTopOf="@+id/tvLblTotalRecovered" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
